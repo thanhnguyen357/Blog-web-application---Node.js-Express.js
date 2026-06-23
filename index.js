@@ -31,6 +31,25 @@ app.post('/create', (req, res) => {
     res.redirect('/');
 });
 
+app.get('/edit/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    const post = posts.find(p => p.id === id);
+
+    res.render("edit", { post });
+});
+
+app.post('/edit/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+    const { title, content } = req.body;
+    const post = posts.find(p => p.id === id);
+
+    if (post) {
+        post.title = title;
+        post.content = content;
+    }
+    res.redirect('/');
+});
+
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });
