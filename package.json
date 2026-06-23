@@ -1,0 +1,26 @@
+{
+  "name": "blog-web-application",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thanhnguyen357/Blog-web-application---Node.js-Express.js.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/thanhnguyen357/Blog-web-application---Node.js-Express.js/issues"
+  },
+  "homepage": "https://github.com/thanhnguyen357/Blog-web-application---Node.js-Express.js#readme",
+  "dependencies": {
+    "body-parser": "^2.3.0",
+    "ejs": "^6.0.1",
+    "express": "^5.2.1"
+  }
+}
