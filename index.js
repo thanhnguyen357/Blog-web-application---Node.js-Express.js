@@ -50,6 +50,13 @@ app.post('/edit/:id', (req, res) => {
     res.redirect('/');
 });
 
+app.post('/delete/:id', (req, res) => {
+    const id = parseInt(req.params.id);
+
+    posts = posts.filter(p => p.id !== id);
+    
+    res.redirect('/');
+});
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });

@@ -3,6 +3,10 @@
     <p><%= post.content %></p>
 
     <a href="/edit/<%= post.id %>">Edit</a>
+    
+    <form action="/delete/<%= post.id %>" method="POST">
+      <button type="submit">Delete</button>
+    </form> 
 <%  }) %>
 
 <a href="/create">Create New Post</a>
